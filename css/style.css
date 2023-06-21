@@ -1,0 +1,24 @@
+:root {
+    --header-color: #ff6900;
+}
+
+
+header > .container > img {
+    width: 15%;
+    height: auto;
+}
+
+header {
+    padding: 10px 5px;
+    background-color: var(--header-color);
+}
+
+.shop_categories {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.shop_categories > li {
+    display: inline-block;
+}
