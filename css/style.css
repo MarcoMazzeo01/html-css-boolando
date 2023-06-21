@@ -1,8 +1,10 @@
 :root {
     --header-color: #ff6900;
+    --footer-color: #1a1a1a;
+    --items-column-gap: 20px;
 }
 
-
+/* GENERICS */
 header > .container > img {
     width: 15%;
     height: auto;
@@ -11,15 +13,17 @@ header > .container > img {
 header {
     padding: 10px 5px;
     background-color: var(--header-color);
+    margin-bottom: 40px;
 }
 
-.items_container {
-    width: 70%;
-    margin: 0 auto;
-    column-gap: 20px;
-    row-gap: 40px;
+footer {
+    color: white;
+    background-color: var(--footer-color);
+    margin-top: 40px;
 }
 
+
+/* SPECIFICS */
 .shop_categories {
     list-style: none;
     margin: 0;
@@ -31,10 +35,18 @@ header {
 }
 
 
+/* ITEMS */
+.items_container {
+    width: 70%;
+    margin: 0 auto;
+    column-gap: var(--items-column-gap);
+    row-gap: 40px;
+}
+
 .item {
     flex-grow: 1;
     flex-basis: auto;
-    width: calc((100%/3) - 20px);
+    width: calc((100%/3) - var(--items-column-gap));
     /* border: 1px dashed black; */
 }
 
