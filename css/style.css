@@ -13,6 +13,13 @@ header {
     background-color: var(--header-color);
 }
 
+.items_container {
+    width: 70%;
+    margin: 0 auto;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
 .shop_categories {
     list-style: none;
     margin: 0;
@@ -21,4 +28,17 @@ header {
 
 .shop_categories > li {
     display: inline-block;
+}
+
+
+.item {
+    flex-grow: 1;
+    flex-basis: auto;
+    width: calc((100%/3) - 20px);
+    /* border: 1px dashed black; */
+}
+
+.item > img {
+    width: 100%;
+    height: auto;
 }
